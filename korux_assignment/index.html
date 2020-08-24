@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PayMediCare</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="file/heroes.json"></script>-->
+   
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top custom-nav" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand page-scroll logo" href="#page-top">
+                    <img src="img/PayMedicare_02.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Header -->
+    <section class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="box first">
+                        <div class="curr-bal">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="curr-bal-head">Current Balance</div>
+                                </div>
+                                <div class="modal-cls">
+                                <div class="row" style="margin-bottom: 13px;">
+                                    <div class="col-md-6 text-left">
+                                            <div class="patient-cls">
+                                                Patient
+                                            </div>
+                                            <div id="patient-id">
+                                                Patient
+                                            </div>
+                                            <div class="patient-cls">
+                                                Practice
+                                            </div>
+                                            <div id="practice-id">
+                                                Practice
+                                            </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="amount-cls">
+                                            <div class="col-md-4 amt-cls">
+                                                <span>$</span><span id="counter1"></span>
+                                                <h6>Total Amount</h6>
+                                            </div>
+                                            <div class="col-md-4 amt-cls">
+                                                <span>$</span><span id="counter2"></span>
+                                                <h6>Previously Paid</h6>
+                                            </div>
+                                            <div class="col-md-4 amt-blue-cls">
+                                                <span>$</span><span id="counter3"></span>
+                                                <h6>Balance Due</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- <div class="col-md-6">
+                                           
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <p class="view-stat-cls">
+                                            <a href="#" class="view-statlink-cls">View Statement Details</a>
+                                            <a class="btn  btn-blue card-btn" href="#" role="button" >Pay by Card</a> 
+                                            <a class="btn  btn-blue check-btn" href="#" role="button">Pay by Check</a>
+                                         </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="">
+                                        <table class="table ">
+                                            <thead>
+                                            <th>Date</th>
+                                            <th>Card</th>
+                                            <th>Amount</th>
+                                            </thead>
+                                            <tbody id="jsresult"></tbody>
+                                        </table>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </section>
+    <section class="pay-online">
+        <div class="container-fluid">
+			<div class="row">
+                <div class="text-center">
+                    <h4 class="section-heading">Discover the smarter way to pay online</h4>
+                    <hr class="section-heading-spacer">
+                </div>
+                <div class="col-xs-12  col-md-2 project" id="p1">
+                    <img src="img/PayMedicare_03.png" alt="PayMedicare_03">
+					<h6>Pay your medical bills</h6>
+					<p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo molestie. </p>
+                </div>
+                <div class="col-xs-12 col-md-2  col-half-offset project" id="p2">
+                    <img src="img/PayMedicare_05.png" alt="PayMedicare_05">
+					<h6>Access last statement electronically</h6>
+					<p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo molestie. </p>
+                </div>
+                <div class="col-xs-12 col-md-2 col-half-offset project" id="p3">
+                    <img src="img/PayMedicare_07.png" alt="PayMedicare_07">
+                    <h6>Get e-statement</h6>
+					<p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo molestie. </p>
+                </div>
+                <div class="col-xs-12 col-md-2 col-half-offset project" id="p4">
+                    <img src="img/PayMedicare_09.png" alt="PayMedicare_09">
+                    <h6>View statement balance, for multiple medicare practice</h6>
+					<p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo molestie. </p>
+                </div>
+                <div class="col-xs-12 col-md-2 col-half-offset project" id="p5">
+                    <img src="img/PayMedicare_11.png" alt="PayMedicare_11">
+                    <h6>Trace your medicarepay payment</h6>
+					<p>Dolor sit amet, consectetur adipiscing elit quisque tempus eget diam et lorem a laoreet phasellus ut nisi id leo molestie. </p>
+                </div>
+			</div>
+		</div>
+    </section>
+  
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

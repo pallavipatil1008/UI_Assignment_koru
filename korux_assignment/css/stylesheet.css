@@ -1,0 +1,167 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato";
+    font-size: 12px;
+    color: #333;
+  
+}
+
+.custom-nav {
+    background-color: #fff;
+    -webkit-box-shadow: 2px 1px 2px #d8d8d8;
+    -moz-box-shadow: 2px 1px 2px #d8d8d8;
+    -ms-box-shadow: 2px 1px 2px #d8d8d8;
+    box-shadow: 2px 1px 2px #d8d8d8;
+    padding: 18px 0px !important;
+    margin-bottom: 0px !important;
+}
+.logo{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.intro-header {
+    height: 371px;
+    text-align: center;
+    background: url(../img/PayMedicare_01.png)#fff no-repeat center center;
+    background-size: cover;
+    height: 368px;
+    margin-top: 50px;
+}
+.project{
+	margin-top: 12px;
+	text-align:center;
+}
+
+.project h6{
+    color:#fff;
+    padding: 10px 0px;
+    min-height: 50px;
+    font-size: 14px;
+}
+.project p{
+	font-family: 'Roboto', 'sans-serif';
+	font-size:13px;
+	font-weight:300;
+	margin-top: 16px;
+	line-height: 23px;
+	color:#d6d5d5;
+}
+.pay-online{
+    background:#1D5199;
+    padding: 76px 0px 36px 0px;
+    box-sizing: content-box;
+}
+.col-half-offset{
+    margin-left:4.166666667%
+}
+.section-heading{color:#fff;font-size: 20px;}
+.section-heading-spacer {
+    width: 70px;
+    border-top: 3px solid #37649B;
+}
+/*box*/
+
+.box {
+	/* padding: 50px 30px; */
+	background: #fff;
+	border-bottom: 1px solid #e9e9e9;
+	position: relative;
+	box-shadow: 2px 2px 5px #e9e9e9;
+}
+
+.box.first {
+	/* margin-top: 9px;
+    border-radius: 5px 5px 0 0; */
+    /* min-height: 450px; */
+    position: absolute;
+    width: 769px;
+    height: 375px;
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+    /* left: 50%; */
+    left: 50%;
+    top: 34px; 
+    transform: translate(-50%, 0);
+}
+
+.curr-bal-head{
+    border: 1px solid transparent;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+    border-top: 3px solid #FFC22C;
+    padding: 26px 0px;
+    font-size: 22px;
+}
+#patient-id,#practice-id{font-weight: 600;color: #333;}
+.amount-cls .amt-cls{font-weight: 600;color:#000;}
+.amount-cls .amt-blue-cls{font-weight: 600;color:#2763B9;}
+.btn-blue
+{
+    background-color: #2763B9;
+    border: 1px solid #2763B9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+.btn-blue:hover{
+    color:#e0dcdc;
+}
+.view-stat-cls{
+    float: right;
+    padding: 0px 13px 0px 13px;
+}
+.view-stat-cls .view-statlink-cls{
+    color:#FFC233;
+    text-decoration: underline;
+}
+@media(max-width:992px) {
+   
+    .box.first {
+        /* min-height: 450px; */
+        position: relative;
+        width: auto;
+        height: auto;
+        /* margin-left: 0px; */
+        /* margin-right: 0px; */
+        /* left: 50%; */
+        /* left: 50%; */
+        /* top: 34px; */
+        /* transform: translate(-50%, 0); */
+    }
+    .col-half-offset {
+        margin-left: 0%;
+    }
+    .view-stat-cls .view-statlink-cls {
+        color: #FFC233;
+        text-decoration: underline;
+        float: left;
+        width: 100%;
+    }
+    .intro-header {
+        /* height: 371px; */
+        text-align: center;
+        background: url(../img/PayMedicare_01.png)#fff no-repeat center center;
+        background-size: cover;
+        height: auto;
+        margin-top: 50px;
+    }
+}
+.modal-cls{
+    padding: 21px 18px 18px 18px;
+}
+.table>tbody>tr>td{text-align:left;}
+.table>tbody>tr>td:nth-child(3){text-align:right;}
+.table>thead>tr>th:nth-child(3){text-align:right;}
